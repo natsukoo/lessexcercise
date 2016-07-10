@@ -1,0 +1,110 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 600px;
+  height: 360px;
+  background-color: #d7e4d7;
+  color: #000;
+  position: relative;
+  border: 1px solid #eee;
+}
+.num {
+  width: 215px;
+  height: 90px;
+  background-color: #cd2f00;
+  color: #fff;
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  text-align: center;
+  display: inline-block;
+}
+.num span {
+  font-size: 70px;
+  line-height: 90px;
+}
+.right {
+  width: 350px;
+  height: 90px;
+  background-color: transparent;
+  color: #006401;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: inline-block;
+  text-align: center;
+}
+.right h2 {
+  font-size: 23px;
+}
+.right p {
+  font-size: 10px;
+}
+.right h1 {
+  font-size: 35px;
+  color: #cd2f00;
+}
+.open {
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: 115px;
+  text-indent: 15px;
+}
+.detail {
+  font-size: 0;
+  width: 585px;
+  height: 155px;
+  background-color: #006401;
+  color: #fff;
+  position: absolute;
+  bottom: 40px;
+  right: -1px;
+}
+.detail ul {
+  margin: 30px auto;
+}
+.detail ul li {
+  font-size: 10px;
+  float: left;
+  width: 10px;
+  height: auto;
+  background-color: transparent;
+  color: #fff;
+  position: relative;
+  padding: 13px;
+  list-style: none;
+  white-space: 0.2em;
+}
+.detail ul .clearfix {
+  clear: both;
+}
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  color: #000;
+  position: absolute;
+  bottom: 5px;
+  font-size: 10px;
+  text-align: center;
+}
+.footer div {
+  width: 70%;
+  height: 7px;
+  background-color: #cd2f00;
+  color: #000;
+  position: absolute;
+  border: 1px solid #eee;
+  font-size: 0;
+  top: 26px;
+  left: 15%;
+  overflow: visible;
+}
+.footer div span {
+  bottom: 0;
+  right: 15%;
+}
