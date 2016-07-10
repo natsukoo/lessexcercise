@@ -101,10 +101,21 @@ body {
   border: 1px solid #eee;
   font-size: 0;
   top: 26px;
-  left: 15%;
+  left: 12.5%;
   overflow: visible;
 }
-.footer div span {
-  bottom: 0;
-  right: 15%;
+.footer div div {
+  width: 0;
+  height: 0;
+  background-color: #cd2f00;
+  color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  margin-right: -100px;
+  border-left: 10px solid #006401;
+  border-bottom: 10px solid #006401;
+  border-right: 10px solid #d7e4d7;
+  border-top: 10px solid #d7e4d7;
 }

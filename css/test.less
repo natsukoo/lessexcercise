@@ -12,36 +12,15 @@
 .border(@w:1px,@s:solid,@c:#eee){
 	border:@arguments;
 }
-.triangle(top,@w:10px,@c,@t){
-	border-width: @w;
-	border-color: @t @t @c @t;
-}
-.triangle(bottom,@w:10px,@c,@t){
-	border-width: @w;
-	border-color:@c @t @t @t;
-}
-.triangle(tb,@w:10px,@c,@t){
-	border-width: @w;
-	border-color:@t @t @c @c;
-}
-
-.triangle(@_,@w:10px,@c,@t){
-	display: block;
-	.block(@red,#000,0,0,absolute);
-	border-style: solid;
-	overflow:hidden;
-}
-
 @red:#cd2f00;
 @green:#006401;
-@bgcolor:#d7e4d7;
 
 html,body{
 	margin: 0;
 	padding:0;
 }
 .container{
-	.block(@bgcolor,#000,600px,360px,relative);
+	.block(#d7e4d7,#000,600px,360px,relative);
 	.border();
 	// overflow: hidden;
 }
@@ -111,12 +90,17 @@ html,body{
 		.border();
 		font-size: 0;
 		top:@base*2.6;
-		left:15%;
+		left:12.5%;
 		overflow: visible;
-		span{
-			.triangle(tb,10px,@red,@bgcolor);
-			bottom:0;right:0;
-
+		div{
+			.block(@red,#000,0,0,absolute);
+			top:0;right:0;
+			float:right;
+			margin-right: -100px;
+			border-left:10px solid @green;
+			border-bottom:10px solid @green;
+			border-right: 10px solid #d7e4d7;
+			border-top: 10px solid #d7e4d7;
 		}
 	}
 
